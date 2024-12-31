@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arnavs birthday party</title>
+    
+</head>
+<body>
+   <h1>Enter passwords</h1>
+   <form>
+    <label for="pswd">Enter your password: </label>
+    <input type="password" id="pswd">
+    <input type="button" value="Submit" onclick="checkPswd();" />
+</form>
+<!--Function to check password the already set password is dogs-->
+<script type="text/javascript">
+    function checkPswd() {
+        let confirmPassword = "Arnavparty";
+        let password = document.getElementById("pswd").value;
+        if (password == confirmPassword) {
+             window.location="mainpage.html";
+        }
+        else{
+            alert("Passwords do not match.");
+        }
+    }
+
+
+</script>
+
+
+
+
+</body>
+</html>
